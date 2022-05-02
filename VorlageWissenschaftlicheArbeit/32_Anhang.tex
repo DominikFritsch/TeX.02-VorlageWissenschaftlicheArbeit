@@ -1,0 +1,147 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Seitenlayout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Kopfzeile
+\ihead{}
+\chead{}
+\ohead{\pagemark}
+
+% Fußzeile
+\ifoot{}
+\cfoot{}
+\ofoot{}
+
+% Abstand im Inhaltsverzeichnis erzeugen
+\addtocontents{toc}{\protect\contentsline{chapter}{}{}{}}
+
+
+% Anhang im Inhaltsverzeichnis anzeigen
+\addcontentsline{toc}{chapter}{ANHANG}
+%\addtocontents{toc}{\protect\contentsline{chapter}{ANHANG}}
+
+
+% Text mittig positionieren
+\clearpage
+\null
+\vfill
+	\begin{center}
+	\bfseries
+	\fontsize{80pt}{30pt}
+	\selectfont
+	Anhang
+	\end{center}
+	
+	% Standardisierte Kopf- und Fußzeile
+	\thispagestyle{plain}
+	
+\vfill
+\clearpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inhalt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Seitenumbruch
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 	Eine Abschlussarbeit muss nicht zwingend einen Anhang enthalten.
+
+% 	Der Anhang soll dazu genutzt werden, um die eigene Argumentation zu stärken. Er beinhaltet
+%	hauptsächlich ergänzende und keine essentiell wichtigen Informationen.
+
+
+% 	Mögliche Inhalte:
+%		- Fragebogen
+%		- Transkripte mündlicher Interviews
+% 		- Vorlagen für Umfragen und Experteninterviews
+%		- Beweis für Forschungsergebnisse in Form von Tabellen und Abbildungen
+%		- Ergänzende oder umfassende Tabellen
+%		- Weiterführende Abbildungen
+%		- Grafiken die den Lesefluss stören
+%		- Umfangreiche Texte wie z. B. Definitionen oder fremdsprachige Texte die für die Arbeit
+%	 	  wichtig sind und als Ergänzung dienen
+%		- Quellcode
+%		- Statistiken
+
+% 	Ziele:
+%		- Argumente verstärken
+%		- Platz für ergänzende / detaillierte Informationen gewähren
+%		- Transparenz gewährleisten
+%		- Entlastung des Hauptteils
+%		- Besseres Textverständnis ermöglichen
+%		- Lesefluss verbessern
+
+%	Formatierung:
+%		- Muss im Inhhaltsverzeichnis genannt werden
+%		- Vor den Inhalten muss ein Blatt mit dem Titel "ANHANG" eingefügt werden
+%		- Die Seiten müssen mit römischen Zahlen nummeriert werden. Der Anhang knüpft an die
+%		  Nummerierung der vorderen Seiten an.
+%		- Bei einem umfangreichen Anhang muss ein separates Inhaltsverzeichnis erstellt werden
+%		- Verweise auf den Anhang müsssen im Hauptteil eingefügt werden
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Beginne Anhang
+\appendix
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Anhang A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Kapitelname
+\chapter{Fragebögen}
+
+% Benutzerdefinierte Kopf- und Fußzeile
+\thispagestyle{headings}
+
+% INHALT
+
+\blindtext[1]
+
+
+
+
+% Seitenumbruch
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Anhang B
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Kapitelname
+\chapter{Vorlagen}
+
+% Benutzerdefinierte Kopf- und Fußzeile
+\thispagestyle{headings}
+
+% Unterkapitel
+\section{Umfrage}
+
+% INHALT
+
+\blindtext[1]
+
+
+
+% Vertikaler Abstand
+\vskip 20mm
+
+
+% Unterkapitel
+\section{Experteninterview}
+
+
+% INHALT
+
+\blindtext[1]

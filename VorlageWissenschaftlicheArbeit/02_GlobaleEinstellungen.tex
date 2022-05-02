@@ -1,0 +1,128 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formatierung: Absatz
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Abschaltung: Automatischer Einzug nach Absatz
+\setlength{\parindent}{0pt}	
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formatierung: Fußnote
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Definition: Fußnotenzeichen (arabic, roman, alph)
+\renewcommand{\thefootnote}{\Alph{footnote}} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Allgemeine Kommandos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\logo}{ToDo}
+\newcommand{\faculty}{Elektrotechnik}
+\newcommand{\professorship}{Virtual- und Augmented-Reality}
+\newcommand{\degree}{Angestrebter Titel z.B. Master}
+\newcommand{\germanTitle}{Thema der wissenschaftlichen Arbeit}
+\newcommand{\englishTitle}{Thema der wissenschaftlichen Arbeit (Englisch)}
+\newcommand{\currentDate}{\today}
+\newcommand{\submitDate}{Abgabedatum}
+\newcommand{\firstExaminer}{Erstprüfer}
+\newcommand{\secondExaminer}{Zweitprüfer}
+\newcommand{\natureOfWork}{Art der Arbeit z.B. Studienarbeit}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Authorspezifische Kommandos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\authorFirstname}{Vorname}
+\newcommand{\authorLastname}{Nachname}
+\newcommand{\authorAddress}{Straße und Hausnummer, PLZ}
+\newcommand{\authorBirthplace}{Ort}
+\newcommand{\authorPhoneNumber}{0121-012345}
+\newcommand{\authorMatriculationNumber}{Mat.-Nr.}
+\newcommand{\authorSemester}{Semester}
+\newcommand{\authorCourseOfStudies}{Studiengang}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hintergrundbild
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\BackgroundPicture{\put(0,0){\parbox[b][\paperheight]{\paperwidth}{
+	\vfill
+	\centering
+	\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{Hintergrundbild.png}
+	\vfill}}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Zusätzliche Ebenen für Unterkapitel erzeugen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{
+			\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+			\setcounter{secnumdepth}{4}
+			\setcounter{tocdepth}{4}
+
+\newcommand{
+			\subsubsubsubsection}[1]{\subparagraph{#1}\mbox{}\\}
+			\setcounter{secnumdepth}{5}
+			\setcounter{tocdepth}{5}
+	
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Layout für Unterkapitel festlegen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% section = Große Schrift und Fettdruck
+\addtokomafont{section}{\fontsize{22pt}{0pt}\selectfont\bfseries}
+
+% subsection = Große Schrift und Fettdruck
+\addtokomafont{subsection}{\fontsize{20pt}{0pt}\selectfont\bfseries}	
+
+% subsubsection = Große Schrift und Fettdruck	
+\addtokomafont{subsubsection}{\fontsize{18pt}{0pt}\selectfont\bfseries}
+
+% subsubsubsection = Normale Schrift und Kursiv	
+\addtokomafont{paragraph}{\fontsize{16pt}{0pt}\selectfont\itshape}	
+
+% subsubsubsubsection = Kleine Schrift, Kursiv und Eingerückt	
+\addtokomafont{subparagraph}{\fontsize{14pt}{0pt}\selectfont\itshape}				
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Kapitelabstand definieren bei Nichtverwendung des Pakets 'quotchap'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Default = \vspace*{2.3\baselineskip}
+%\renewcommand*{\chapterheadstartvskip}{\vspace*{.5\baselineskip}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTex interne Kapitelmarkierung ändern
+
+% Aufruf der Kapitelmarkierung innerhalb der Kopf- und Fußzeile mittels
+% Befehl \leftmark
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername}\ \thechapter:\ #1}{}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Seitenlayout festlegen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inhaltsverzeichnis: 
+
+% Abstand zwischen Punkt-Linie und Seitenzahlanzeige erhöhen
+
+% Dies verhindert, dass die Punkte-Linie über die römische Nummerierung
+% herausragt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makeatletter
+\renewcommand*{\@pnumwidth}{2em}
+\makeatother

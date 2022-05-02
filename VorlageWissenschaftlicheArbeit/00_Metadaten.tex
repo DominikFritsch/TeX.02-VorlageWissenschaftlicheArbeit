@@ -1,0 +1,332 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dokumentklassen
+
+% article
+% Empfohlen für Texte mit geringer Seitenzahl: Aufsätze, Seminar- und Studienarbeiten
+
+% report
+% Empfohlen für Texte mit mittlerer Seitenzahl: Bachelor- und Masterarbeiten
+
+% book
+% Empfohlen für größere Texte wie Bücher und Dissertationen
+
+% letter
+% Geeignet für das Erstellen von Briefen
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[table,a4paper, 12pt, oneside, titlepage, oneside]{scrreprt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Zitationsstiel
+
+% unsrt		= 	Sortierung: 		Reihenfolge der Verwendung
+%				Referenzierung: 	Nummer
+%				Darstellung: 	voll ausgeschriebene Namen, Titel kursiv
+
+
+% abbrvdin	= 	Sortierung: 		Name des Autors
+%				Referenzierung: 	Nummer
+%				Darstellung:  	Autor in Kapitälchen, Initialen des Vornamens, Titel in kursiv
+
+
+% alphadin	= 	Sortierung: 		Kürzel des Autors
+%				Referenzierung: 	Kürzel des Autors (3-stellig) und Jahreszahl (2-stellig) 
+%				Darstellung:		Autoren Kapitälchen, Titel kursiv
+
+% natdin		= 	Sortierung: 		Name des Autors
+%				Referenzierung: 	Autor und Jahreszahl
+%				Darstellung: 	Nachname Autor Kapitälchen, Titel kursiv
+				
+% plain		= 	Sortierung: 		Name des Autors
+%				Referenzierung: 	Nummer
+%				Darstellung: 	voll ausgeschriebene Namen, Titel kursiv
+
+% abbrv		= 	Sortierung: 		Name des Autors
+%				Referenzierung: 	Nummer
+%				Darstellung: 	Vorname als Initialen, Titel kursiv
+
+% aplha		= 	Sortierung:		Kürzel des Autors
+%				Referenzierung: 	Kürzel des Autors (3-stellig) und Jahreszahl (2-stellig) 
+%				Darstellung: 	keine Textdekorationen
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\bibliographystyle{unsrt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages
+
+% Package 'geometry'			= Festlegung von Seitenränder Realität: top, bottom +10 mm und left, right +5 mm
+% Package 'blindtext'		= Erlaubt das Einfügen von Text-Dummys
+% Package 'tabularx'    		= Erlaubt Zeilenumbrüche innerhalb einer Tabelle
+% Package 'longtable'		= Erlaubt Seitenumbrüche innerhalb einer Tabelle
+% Package 'listings'			= Ermöglicht die Anzeige von Quellcode im Dokument
+% Package 'graphicx'			= Ermöglicht die Einbindung von Grafiken in das Dokument
+% Package 'tikz'				= Ermöglicht die Erstellung von Grafiken im Dokument
+% Package 'hyperref'			= Erlaubt das Einfügen von Hyperlinks innerhalb des Dokuments
+% Package 'wrapfig'			= Ermöglicht die Einbindung von Grafiken innerhalb des Fließtextes
+% Package 'color'			= Ermöglicht die farbliche Textausgabe
+% Package 'lscape'			= Ermöglicht das Ausgeben einzelner Zeilen in Querformat
+%							  \begin{landscape} Inhalt \end{landscape}
+% Package 'inputenc'			= Ermöglicht die Ausgabe von Umlauten (Umlaut besteht aus zwei Zeichen Vokal + Punkte)
+% Package 'fontenc'			= Verbindet Vokal + Punkte zu einem Zeichen
+% Package 'babel'			= Festlegung der Sprache
+% Package 'scrlayer-scrpage'	= Ermöglicht Anpassungen an Kopf- und Fußzeile
+% Package 'acronym'			= Ermöglicht das Erstellen und Einbinden von Abkürzungen
+% Package 'amsmath'			= Erweiterung für den Mathe-Datensatz von LaTex (z.B. equation*...)
+% Package 'amssymb'			= Zusätzliche Symbole und Schriftarten für den Mathe-Datensatz von LaTex
+% Package 'eso-pic'			= Hinzufügen eines Hintergrundbildes
+% Package 'setspace'			= Veränderung des Zeilenabstands
+% Package 'epigraph'			= Ermöglicht das einfache Erstellen von Zitate
+% Package 'float'			= Unterstützung der H-Positionierung
+%						  	  Keine automatische Verschiebung von Bilder / 	Tabellen
+% Package 'subcaption'		= Ermöglicht die Zusammenstellung mehrerer Bilder
+% Package 'booktabs'			= Zusätzliche Linien in Tabellen
+% Package 'acronym'			= Ermöglicht das Erstellen eines Abkürzungsverzeichnisses
+% Package 'fix-cm'			= Ermöglicht die benutzerdefinierte Schriftgrößen
+% Package 'scrhack'			= Warnung von Paket 'tocbasic' basierend auf Paket 'float' beheben
+% Package 'quotchap'			= Gestaltung Kapitel
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage[left=25mm,right=15mm, top=25mm, bottom=25mm]{geometry} 
+\usepackage{blindtext}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{lscape}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[german]{babel}
+\usepackage[headsepline]{scrlayer-scrpage}
+\usepackage[printonlyused]{acronym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{eso-pic}
+\usepackage{setspace}
+\usepackage{epigraph}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage[printonlyused]{acronym}
+\usepackage{hyperref}
+	% Hyperlinks einfärben
+	\hypersetup{
+				colorlinks=true,
+				linkcolor=blue,
+				citecolor=cocoabrown,
+				% urlcolor=red
+			   }
+\usepackage{fix-cm}
+\usepackage{scrhack}
+
+% Options (Schriftart): 	palatino, avantgarde, beramono, berasans, bookman,
+%						courier, helvetica, kpfonts, lmodern, newcentury, times
+%						utopia
+\usepackage[newcentury]{quotchap}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Benutzerdefinierte Variablen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{CounterSavedPageNumberingRoman}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dokumentanfang
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packeteinstellungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{01_Paketeinstellungen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Globale Einstellungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{02_GlobaleEinstellungen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorwort Teil 01: Deckblatt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Hintergrundbild einblenden
+\AddToShipoutPicture{\BackgroundPicture}
+
+% Deckblatt importieren
+\include{10_Deckblatt}
+
+% Deckblatt erstellen
+\maketitle
+
+% Hintergrundbild ausblenden
+\ClearShipoutPicture
+
+% Seitenumbruch
+\newpage
+
+% Eineinhalbfacher Zeilenabstand
+\onehalfspacing
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorwort Teil 02: Sperrvermerk
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Sperrvermerk importieren
+\include{11_Sperrvermerk}
+
+% Seitenumbruch
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorwort Teil 03: Danksagung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Sperrvermerk importieren
+\include{12_Danksagung}
+
+% Seitenumbruch
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorwort Teil 04: Kurzinhalt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Sperrvermerk importieren
+\include{13_Kurzinhalt}
+
+% Seitenumbruch
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorwort Teil 05: Inhaltsverzeichnis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Inhaltsverzeichnis importieren
+\include{14_Inhaltsverzeichnis}
+
+% Seitenumbruch
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorwort Teil 06: Abbildungsverzeichnis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Abbildungsverzeichnis importieren
+\include{15_Abbildungsverzeichnis}
+
+% Seitenumbruch
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorwort Teil 07: Tabellenverzeichnis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Tabellenverzeichnis importieren
+\include{16_Tabellenverzeichnis}
+
+% Seitenumbruch
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorwort Teil 08: Abkürzungsverzeichnis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Abkürzungsverzeichnis importieren
+\include{17_Abkuerzungsverzeichnis}
+
+% Seitenumbruch
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hauptteil Teil 01: Vorwort
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Forschungsthema importieren
+\include{20_Vorwort}
+
+% Seitenumbruch
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hauptteil Teil 02: Geschichte
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Zielsetzung importieren
+\include{21_Geschichte}
+
+% Seitenumbruch
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hauptteil Teil 02: Geschichte
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Zielsetzung importieren
+\include{22_Hochschule}
+
+% Seitenumbruch
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Schluss Teil 01: Literaturverzeichnis
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Seitenlayout: Keine Kopfzeile
+\pagestyle{empty}
+
+% Nummerierung
+\pagenumbering{gobble}
+
+% Literaturverzeichnis importieren
+\include{30_Literaturverzeichnis}
+
+% Seitenumbruch
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Schluss Teil 02: Eidesstattliche Erklärung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Eidesstattliche Erklärung importieren
+\include{31_EidesstattlicheErklaerung}
+
+% Seitenumbruch
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Schluss Teil 03: Anhang
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Anhang importieren
+\include{32_Anhang}
+
+% Seitenumbruch
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dokumentende
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

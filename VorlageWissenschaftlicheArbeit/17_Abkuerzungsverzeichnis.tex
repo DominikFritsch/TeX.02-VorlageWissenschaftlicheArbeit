@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Seitenlayout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Kopfzeile
+\ihead{}
+\chead{}
+\ohead{\pagemark}
+
+% Fußzeile
+\ifoot{}
+\cfoot{}
+\ofoot{}
+
+% Text Abkürzungsverzeichnis zum Inhaltsverzeichnis hinzufügen
+\addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+
+% Kapitelname (Abkürzungsverzeichnis)
+\chapter*{Abkürzungsverzeichnis}
+
+% Benutzerdefinierte Kopf- und Fußzeile für erste Seite eines Kapitels
+\thispagestyle{headings}
+
+% Seitenzähler speichern
+\setcounter{CounterSavedPageNumberingRoman}{\value{page}}
+
+% Zählerwert um 1 erhöhen
+\addtocounter{CounterSavedPageNumberingRoman}{1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inhalt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \begin{acronym}[Längste Kurzform]
+\begin{acronym}[slmtA]
+% Einzahl
+%	\acro{Kuerzel}[Kurzform]{Langform}
+	\acro{FHWS}[FHWS]{Hochschule für angewandte Wissenschaften Würzburg-Schweinfurt}
+% Mehrzahl
+% 	\acroplural{Kuerzel}[Kurzform des Plurals]{Langform des Plurals}
+	\acroplural{slmtA}[slmtAs]{super lange mega tolle Abkürzungen}
+\end{acronym}

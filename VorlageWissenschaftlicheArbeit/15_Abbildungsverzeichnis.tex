@@ -1,0 +1,31 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Seitenlayout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Kopfzeile
+\ihead{}
+\chead{}
+\ohead{\pagemark}
+
+% Fußzeile
+\ifoot{}
+\cfoot{}
+\ofoot{}
+
+% Text Abbildungsverzeichnis zum Inhaltsverzeichnis hinzufügen
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+
+% Abbildungsverzeichnis erstellen
+\listoffigures
+
+% Benutzerdefinierte Kopf- und Fußzeile für erste Seite eines Kapitels
+\thispagestyle{headings}
+
+% Kopfzeilentrennlinie einschalten	
+\KOMAoptions{headsepline=true}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inhalt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

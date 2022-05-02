@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Seitenlayout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Nummerierung
+\pagenumbering{Roman}
+
+% Kopfzeile
+\ihead{}
+\chead{}
+\ohead{}
+
+% Fußzeile
+\ifoot{}
+\cfoot{}
+\ofoot{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inhalt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\maketitle}{
+\begin{titlepage}
+
+% Seiteränder verändern
+\newgeometry{left=25mm,right=25mm, top=60mm, bottom=15mm}
+
+	% Gestaltung: Art der Arbeit
+	\begingroup
+		\begin{center}
+			\fontsize{35.83pt}{0pt}
+			\selectfont{\textcolor{goldenRod}{\bfseries\MakeUppercase{Master-Thesis}}}
+		\end{center}
+	\endgroup
+
+
+	% Vertikaler Abstand
+	\vskip 15mm
+
+
+	% Gestaltung: Grad der Arbeit
+	\begingroup
+		\fontsize{11pt}{0pt}
+		\selectfont{\scshape{Zur Erlangung des akademischen Grades}}
+		\vskip 5mm
+		\begin{center}
+			\fontsize{14.4pt}{0pt}
+			\selectfont{\bfseries\degree}
+		\end{center}	
+	\endgroup
+
+	% Vertikaler Abstand
+	\vskip 8mm
+	
+	% Gestaltung: Schriftstück
+	\begingroup
+		\fontsize{11pt}{0pt}
+		\selectfont{\scshape{Schriftstück}}
+		\vskip 2mm
+		\begin{center}
+			\fontsize{14.4pt}{0pt}
+			\selectfont{\bfseries\natureOfWork}
+		\end{center}	
+	\endgroup
+	
+	
+	% Vertikale Linie einfügen
+	\noindent\rule{160mm}{0.5pt}
+
+	% Vertikaler Abstand
+	\vskip 8mm
+	
+	% Gestaltung: Titel der Arbeit
+	\begingroup
+		\begin{center}
+			\fontsize{16pt}{0pt}
+			\selectfont{\textcolor{blue}{\MakeUppercase{\bfseries\germanTitle}}}
+		\end{center}
+	\endgroup
+
+	% Vertikale Linie einfügen
+	\noindent\rule{160mm}{0.5pt}
+
+	% Vertikaler Abstand
+	\vskip 35mm
+
+
+	\begin{tabular}{@{}p{100mm}p{53mm}}
+		% Gestaltung: Autor (Name und Geburtsort)
+			\fontsize{8pt}{6pt}
+			\selectfont{Name, Geburtsort // Name, Place of Birth}
+			& 
+			\\
+			\fontsize{12pt}{14pt}
+			\selectfont{\authorFirstname~\authorLastname, \authorBirthplace}
+			& 
+			\\ 
+		% Gestaltung: Autor (Adresse)
+			\fontsize{8pt}{6pt}
+			\selectfont{Adresse // Address}
+			&
+			\\
+			\fontsize{12pt}{14pt}
+			\selectfont{\authorAddress}
+			&
+			\\
+			&
+			\\
+			&
+			\\
+		% Gestaltung: Autor (Telefonnummer)
+			\fontsize{8pt}{6pt}
+			\selectfont{Telefonnummer // Phone Number}
+			&
+			\\
+			\fontsize{12pt}{14pt}
+			\selectfont{\authorPhoneNumber}
+			&
+			\\
+		% Gestaltung: Autor (Matrikelnummer) und Gestaltung: Erstprüfer
+			\fontsize{8pt}{6pt}
+			\selectfont{Matrikelnummer // Matriculation Number}
+			&
+			\fontsize{8pt}{6pt}
+			\selectfont{Erstprüfer // First Examiner}
+			\\
+			\fontsize{12pt}{14pt}
+			\selectfont{\authorMatriculationNumber}
+			&
+			\fontsize{12pt}{14pt}
+			\selectfont{\firstExaminer}
+			\\
+		% Gestaltung: Autor (Fachsemester) und Gestaltung: Zweitprüfer
+			\fontsize{8pt}{6pt}
+			\selectfont{Fachsemester // Semester}
+			&
+			\fontsize{8pt}{6pt}
+			\selectfont{Zweitprüfer // Second Examiner}
+			\\
+			\fontsize{12pt}{14pt}
+			\selectfont{\authorSemester}	
+			&
+			\fontsize{12pt}{14pt}
+			\selectfont{\secondExaminer}
+			\\
+		% Gestaltung: Autor (Studiengang)
+			\fontsize{8pt}{6pt}
+			\selectfont{Studiengang // Course of Studies}
+			&
+			\\
+			\fontsize{12pt}{14pt}
+			\selectfont{\authorCourseOfStudies}
+			&
+			\\
+		% Gestaltung: Abgabedatum
+			&
+			\fontsize{8pt}{6pt}
+			\selectfont{Abgabedatum // Date of Submission}
+			\\
+			&
+			\fontsize{12pt}{14pt}
+			\selectfont{\submitDate}
+			\\
+		% Gestaltung: Erstelldatum
+			&
+			\fontsize{8pt}{6pt}
+			\selectfont{Erstelldatum // Date of Creation}
+			\\
+			&
+			\fontsize{12pt}{14pt}
+			\selectfont{\currentDate}
+			\\
+	\end{tabular} 
+
+
+% Seitenränder wiederherstellen
+\restoregeometry
+
+\end{titlepage}
+}
+
