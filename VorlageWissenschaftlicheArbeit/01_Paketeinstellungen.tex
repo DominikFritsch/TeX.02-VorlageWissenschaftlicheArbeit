@@ -1,0 +1,79 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Package 'color'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\definecolor{extendedBlue01}{rgb}{0.0,0.7,0.9} 		% Definition Farbe: Erweitertes Blau 01
+\definecolor{goldenRod}{rgb}{0.85, 0.65, 0.13}		% Definition Farbe: goldenRod
+\definecolor{darkGoldenRod}{rgb}{0.72, 0.53, 0.04}	% Definition Farbe: darkGoldonRod
+\definecolor{gold}{rgb}{1.0, 0.84, 0.0}				% Definition Farbe: Gold
+\definecolor{metallicGold}{rgb}{0.83, 0.69, 0.22}		% Definition Farbe: metallicGold
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}				% Definition Farbe: amber
+\definecolor{azure}{rgb}{0.0, 0.5, 1.0}				% Definition Farbe: azure
+\definecolor{chamoisee}{rgb}{0.63, 0.47, 0.35}		% Definition Farbe: chamoisee
+\definecolor{cocoabrown}{rgb}{0.82, 0.41, 0.12}		% Definition Farbe: cocoabrown
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Package 'listings'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\lstdefinestyle{CSharp}{
+  language=[Sharp]C, 
+  frame = single,									% Rahmen erzeugen
+  rulecolor = \color{black},							% Aussehen: Rahmen
+  basicstyle=\scriptsize\ttfamily\color{white},		% Aussehen: Basis (ttfamily = Schreibmaschine)
+  numbers=left,										% Zeilennummerposition (left, right)
+  numberstyle=\tiny,									% Zeilennummergröße
+  xleftmargin=10mm,									% Rahmenabstand links
+  xrightmargin=5mm,						    			% Rahmenabstand rechts
+  framexleftmargin=20pt,								% Linker Abstand des Inhalts zum Rahmen 
+  framexrightmargin=5pt,								% Rechter Abstand des Inhalts zum Rahmen
+  framexbottommargin=5pt, 							% Unterer Abstand des Inhalts zum Rahmen
+  framextopmargin=5pt,								% Oberer Abstand des Inhalts zum Rahmen
+  tabsize = 1,										% Tabulatorgröße
+  showspaces=false,									% Leerzeichenanzeige allgemein
+  showtabs=false,									% Tabulatoranzeige
+  showstringspaces=false,							% Leerzeichenanzeige für Strings
+  breaklines=true,									% Zeilenumbruch
+  stringstyle=\color{orange}\ttfamily,				% Aussehen: String
+  commentstyle=\color{green},						% Aussehen: Kommentar
+  backgroundcolor=\color{black},    					% Aussehen: Hintergrund
+  keywordstyle = \color{extendedBlue01},				% Aussehen: Schlüsselwörter
+  keywordstyle = [2]\color{gray},					% Aussehen: Regionen
+  keywordstyle = [3]\color{yellow},					% Aussehen: Sonderzeichen
+  keywordstyle = [4]\color{red},						% Aussehen: Unity-Klassen
+  otherkeywords = {;,<<,>>,++,--,\#,UnityEngine},		% Zusätzliche Schlüsselwörter definieren
+  morekeywords = [2]{\#,region,endregion},			% Zusätzliche Schlüsselwörter dem Aussehen [2] zuordnen
+  morekeywords = [3]{;,<<, >>,++,--},				% Zusätzliche Schlüsselwörter dem Aussehen [3] zuordnen	
+  morekeywords = [4]{UnityEngine},					% Zusäthliche Schlüsselwörter dem Aussehen [4] zuordnen
+}
+
+
+\lstset{style=CSharp}								% Definiertes Aussehen übernehmen
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Package 'graphicx'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\graphicspath{{/}}				% Definition: Pfad zu Bildern
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Package 'epigraph'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\epigraphrule}{0pt}
+\setlength{\epigraphwidth}{1.0\linewidth} 
+\renewcommand{\textflush}{flushepinormal}
+\renewcommand{\epigraphsize}{\normalsize}
+\renewcommand{\epigraphflush}{flushright}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Package 'quotchap'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{chaptergrey}{goldenRod}				% Nummerierungsfarbe

@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Seitenlayout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Aufbau von Labels
+% 						XX_XX_XX_XX_XX_XX_XX_XX_XX
+% 						chapter_
+% 						section_
+% 						subsection_
+% 						subsubsection_
+% 						subsubsection_
+%						subsubsubsection_
+%						subsubsubsubsection_
+% 						Abbildung_
+%						Unterabbildung_
+% 						Tabelle
+
+% Kopfzeile
+\ihead{}
+\chead{}
+\ohead{\leftmark}
+
+% Fußzeile
+\ifoot{}
+\cfoot{\pagemark}
+\ofoot{}
+
+% Kapitelname
+\chapter{Hochschule}
+\label{22_00_00_00_00_00_00_00_00_00}
+
+% Standard Kopf- und Fußzeile für erste Seite des Kapitels verwenden
+\thispagestyle{plain}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inhalt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Die Hochschule Würzburg-Schweinfurt ist mit 8832 Studierenden (WS 2012/13), 202 Professoren (WS 2012/13), 22 Lehrkräften für besondere Aufgaben und weiteren 286 Mitarbeitern die drittgrößte Hochschule für angewandte Wissenschaften in Bayern. Das Studienangebot der zehn Fakultäten umfasst aktuell über 30 Studiengänge mit Diplom-, Bachelor- und Masterabschlüssen. In Würzburg wurde das neue Hörsaal- und Laborgebäude am Sanderheinrichsleitenweg Anfang September 2011 an die Hochschule übergeben. In Schweinfurt wurde eine Erweiterung der Hochschule am Grünen Markt, gegenüber der Kilianskirche übergeben. Dieser Neubau wurde von der SWG erstellt, kostete etwa 9,6 Millionen Euro und wurde vom Freistaat Bayern von der SWG für mindestens 12 Jahre angemietet. Er bietet als Campus II Platz für 720 Studierende, verteilt auf sieben Hörsäle. Er wurde am 10. August 2011 offiziell eingeweiht.
+
+
+% Vertikaler Abstand
+\vskip 10mm
+
+\section{Studiengänge}
+\label{22_01_00_00_00_00_00_00_00_00}
+
+Diverse Studiengänge werden an der \ac{FHWS} angeboten.
+
+% Vertikaler Abstand
+\vskip 10mm
+
+\subsection{Abteilung Würzburg}
+\label{22_01_01_00_00_00_00_00_00_00}
+
+\begin{enumerate}
+\item Architektur (Bachelor)
+\item Bauingenieurwesen (Bachelor)
+\item E-Commerce (Bachelor)
+\item Betriebswirtschaft (Bachelor)
+\end{enumerate}
+
+
+% Vertikaler Abstand
+\vskip 10mm
+
+
+\subsection{Abteilung Würzburg}
+\label{22_01_02_00_00_00_00_00_00_00}
+
+\begin{enumerate}
+\item Logistik (Bachelor)
+\item Wirtschaftsingenieurwesen (Bachelor)
+\item Elektro- und Informationstechnik (Bachelor und Master)
+\end{enumerate}
+
+
+% Vertikaler Abstand
+\vskip 10mm
+
+
+\section{Auslandskontakte}
+\label{22_02_00_00_00_00_00_00_00_00}
+Die FHWS bietet ein weltweites Netz von über 60 Partnerhochschulen, an denen Studierende ein Auslandsstudium absolvieren können. Der Hochschulservice Internationales an beiden Abteilungen sowie die Auslandsbeauftragten der Fakultäten unterstützen und beraten die Studierenden bei Auslandspraktika, Abschlussarbeiten mit Firmen, deren Sitz sich im Ausland befindet, bei Auslandsaufenthalten sowie bei Fragen der Finanzierung und Stipendien.
+
+
+\vskip 3mm
+	\epigraph
+	{
+		\centering\itshape\frq~Hier sollte ein Zitat stehen.~\flq	
+	}
+	{
+		\vskip 3mm
+		--- Dominik Fritsch, Mitarbeiter VR-Labor
+	}
+\vskip 3mm
+
+Nachfolgende Tabelle \ref{20_02_00_00_00_00_00_00_00_01} zeigt den fiktiven Zusammenhang von Leistung und Speicherkapazität.  
+
+\begin{table}[H] %htbp
+
+\caption{Korrekt formatierte Tabelle}
+\label{20_02_00_00_00_00_00_00_00_01}
+
+	\centering % \raggedright, \raggedleft
+	\rowcolors{2}{lightgray!30}{white}
+	\begin{tabular}{ % Breite, Einheit, Abstand
+				| c
+				  p{0.364\textwidth}<{\hspace{5mm}} |
+				| p{0.25\textwidth}<{\,MW\hspace{5mm}} | 
+				| p{0.25\textwidth}<{\,MWh\hspace{5mm}} |
+			   }
+		\toprule 
+		\# 
+		& 
+		\bfseries Name
+		&
+		\bfseries\textcolor{red}{Leistung} in
+		&
+		\bfseries\textcolor{green}{Speicher} in
+		\\
+		\bottomrule
+		\addlinespace[5mm]
+		\toprule
+	
+	% Werte
+		01 & Test Test Test Test Test Test Test Test& 20 & 300\\
+		\midrule
+		02 & Beschreibung & 20 & 300\\
+		\midrule
+		03 & Beschreibung & 20 & 300\\
+		\midrule
+		04 & Beschreibung & 20 & 300\\
+		\midrule
+		05 & Beschreibung & 20 & 300\\
+		\midrule
+		06 & Beschreibung & 20 & 300\\
+		\midrule
+		07 & Beschreibung & 20 & 300\\
+		\midrule
+		08 & Beschreibung & 20 & 300\\
+		\midrule 
+		09 & Beschreibung & 20 & 300\\
+		\midrule
+		10 & Beschreibung & 20 & 300\\
+		\midrule
+		11 & Beschreibung & 20 & 300\\
+		\midrule
+		12 & Beschreibung & 20 & 300\\ 
+		\midrule
+		13 & Beschreibung & 20 & 300\\
+		\midrule
+		14 & Beschreibung & 20 & 300\\
+		\midrule
+		15 & Beschreibung & 20 & 300\\
+	\bottomrule
+	\end{tabular} 
+\end{table}

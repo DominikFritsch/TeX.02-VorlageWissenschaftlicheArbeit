@@ -1,0 +1,43 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Seitenlayout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Nummerierung
+\pagenumbering{Roman}
+
+% Nummerierungszähler setzen
+\setcounter{page}{\value{CounterSavedPageNumberingRoman}}
+
+% Kopfzeile
+\ihead{}
+\chead{}
+\ohead{\pagemark}
+
+% Fußzeile
+\ifoot{}
+\cfoot{}
+\ofoot{}
+
+% Abstand im Inhaltsverzeichnis erzeugen
+% \addtocontents{toc}{\protect\contentsline{chapter}{}{}{}}
+
+% Literaturverzeichnis im Inhaltsverzeichnis anzeigen
+\addcontentsline{toc}{chapter}{Literatur}
+
+% Literaturverzeichnis einbinden
+\bibliography{Literatur}
+
+% Standard Kopf- und Fußzeile für erste Seite des Kapitels verwenden
+\thispagestyle{headings}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inhalt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
